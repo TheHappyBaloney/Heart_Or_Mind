@@ -12,21 +12,24 @@ body {
     color: #131010;
     text-align: center;
     margin-bottom: 20px;
-
 }
+
 .container {
     display: flex;
     justify-content: space-around;
     align-items : center;
+    flex-wrap: wrap; /* Added this line */
     width: 100%;
 }
 
 .image-container {
     position: relative;
+    width: 100%; /* Added this line */
+    max-width: 300px; /* Added this line */
 }
 
 img {
-    width: 300px;
+    width: 100%; /* Changed this line */
     height: auto;
 }
 
@@ -44,4 +47,11 @@ img {
 
 .active {
     opacity: 1;
+}
+
+/* Added this media query */
+@media (min-width: 768px) {
+    .image-container {
+        width: 50%;
+    }
 }
