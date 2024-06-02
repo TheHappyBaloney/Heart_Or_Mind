@@ -3,12 +3,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #b23fc9;
 }
 
 .container {
     display: flex;
-    gap: 50px;
+    justify-content: space-around;
+    align-items : center;
+    width: 100%;
 }
 
 .image-container {
